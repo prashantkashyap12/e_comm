@@ -90,4 +90,8 @@ export class ProductSliderComponent implements OnInit {
   getStars(rating: number): number[] {
     return Array(5).fill(0).map((_, i) => i < rating ? 1 : 0);
   }
+
+
+
+  
 }

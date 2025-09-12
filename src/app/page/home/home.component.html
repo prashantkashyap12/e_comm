@@ -71,10 +71,10 @@
             </div>
             <!-- <div class="categrie-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
             </div> -->
-            <div class="d-flex justify-space-around categrie-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
+            <div class="d-flex justify-content-center categrie-product-activation slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','phone']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/elec-4.png" alt="product categorie">
                             <h6 class="cat-title">All Phones</h6>
                         </a>
@@ -84,7 +84,7 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','furniture']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/furni-8.png" alt="product categorie">
                             <h6 class="cat-title">All Furniture</h6>
                         </a>
@@ -94,7 +94,7 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','shoes']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/furni-7.png" alt="product categorie">
                             <h6 class="cat-title">All Shoes</h6>
                         </a>
@@ -104,7 +104,7 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','electronics']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/furni-6.png" alt="product categorie">
                             <h6 class="cat-title">All Electronic</h6>
                         </a>
@@ -114,7 +114,7 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','clothes']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/furni-5.png" alt="product categorie">
                             <h6 class="cat-title">All Cloths</h6>
                         </a>
@@ -124,7 +124,7 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="categrie-product">
-                        <a href="#">
+                        <a [routerLink]="['/ProductList','watches']">
                             <img class="img-fluid" src="../../../assets/images/product/categories/elec-1.png" alt="product categorie">
                             <h6 class="cat-title">Smart watches</h6>
                         </a>
@@ -152,7 +152,7 @@
                                     <h2 class="title">Enhance Your Music Experience</h2>
                                 </div>
                                 <div class="poster-countdown countdown mb--40"></div>
-                                <a href="#" class="axil-btn btn-bg-primary">Check it Out!</a>
+                                <a [routerLink]="['/product','electronics','headphone']" class="axil-btn btn-bg-primary">Check it Out!</a>
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-6">
@@ -908,6 +908,35 @@
         </div>
         <!-- End Testimonila Area  -->
 
+
+  <!-- Poster Countdown Area  -->
+        <div class="axil-poster-countdown">
+            <div class="container">
+                <div class="poster-countdown-wrap bg-lighter">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="poster-countdown-content">
+                                <div class="section-title-wrapper">
+                                    <span class="title-highlighter highlighter-secondary"> <i class="far fa-couch"></i> Don’t Miss!!</span>
+                                    <h2 class="title">Decorate Your House with Us</h2>
+                                </div>
+                                <div class="poster-countdown countdown mb--40"></div>
+                                <a href="#" class="axil-btn btn-bg-primary">Check it Out!</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="poster-countdown-thumbnail">
+                                <img src="../../../assets/images/product/poster/poster-07.png" alt="Poster Product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Poster Countdown Area  -->
+         
+
+
         <!-- Start New Arrivals Product Area  -->
         <div class="axil-new-arrivals-product-area bg-color-white axil-section-gap pb--0">
             <div class="container">
@@ -1084,6 +1113,57 @@
             </div>
         </div>
         <!-- End New Arrivals Product Area  -->
+
+
+
+        <!-- Service Offer Area  -->
+        <div class="service-area">
+            <div class="container">
+                <div class="row row-cols-xl-5 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1 row--20">
+                    <div class="col">
+                        <div class="service-box">
+                            <div class="icon">
+                                <img src="../../../assets/images/icons/service1.png" alt="Service">
+                            </div>
+                            <h6 class="title">Fast &amp; Secure Delivery</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-box">
+                            <div class="icon">
+                                <img src="../../../assets/images/icons/service2.png" alt="Service">
+                            </div>
+                            <h6 class="title">100% Guarantee On Product</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-box">
+                            <div class="icon">
+                                <img src="../../../assets/images/icons/service3.png" alt="Service">
+                            </div>
+                            <h6 class="title">24 Hour Return Policy</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-box">
+                            <div class="icon">
+                                <img src="../../../assets/images/icons/service4.png" alt="Service">
+                            </div>
+                            <h6 class="title">24 Hour Return Policy</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-box">
+                            <div class="icon">
+                                <img src="../../../assets/images/icons/service5.png" alt="Service">
+                            </div>
+                            <h6 class="title">Next Level Pro Quality</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         

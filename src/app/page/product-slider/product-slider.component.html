@@ -1,0 +1,71 @@
+<div class="product-slider-container axil-section-gap">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <span class="title-highlighter highlighter-primary"><i class="far fa-shopping-basket"></i> Our Products</span>
+      <h2 class="title">Explore our Products</h2>
+    </div>
+    <div class="controls row mb--30">
+      <div class="col-lg-4 col-md-6 mb--15">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (input)="onSearch()" placeholder="Search products...">
+      </div>
+      <div class="col-lg-3 col-md-6 mb--15">
+        <select class="form-select" [(ngModel)]="selectedCategory" (change)="onFilter()">
+          <option value="">All Categories</option>
+          <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-6 mb--15">
+        <select class="form-select" [(ngModel)]="sortOption" (change)="onSort()">
+          <option value="name">Sort by Name</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid row row--15">
+      <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30" *ngFor="let product of paginatedProducts">
+        <div class="axil-product product-style-one">
+          <div class="thumbnail">
+            <a href="single-product.html">
+              <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" [src]="product.image" alt="Product Images">
+            </a>
+            <div class="label-block label-right" *ngIf="product.oldPrice">
+              <div class="product-badget">{{ ((1 - product.price / product.oldPrice) * 100).toFixed(0) }}% Off</div>
+            </div>
+            <div class="product-hover-action">
+              <ul class="cart-action">
+                <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                <li class="select-option">
+                  <a href="single-product.html">Add to Cart</a>
+                </li>
+                <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="inner">
+              <div class="product-rating">
+                <span class="icon">
+                  <i class="fas fa-star" *ngFor="let star of getStars(product.rating)"></i>
+                </span>
+                <span class="rating-number">({{product.reviews}})</span>
+              </div>
+              <h5 class="title"><a href="single-product.html">{{product.name}}</a></h5>
+              <div class="product-price-variant">
+                <span class="price current-price">${{product.price}}</span>
+                <span class="price old-price" *ngIf="product.oldPrice">${{product.oldPrice}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination row">
+      <div class="col-lg-12 text-center mt--20">
+        <button class="axil-btn btn-bg-lighter" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+        <span class="mx-2">Page {{currentPage}} of {{totalPages}}</span>
+        <button class="axil-btn btn-bg-lighter" (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+      </div>
+    </div>
+  </div>
+</div>

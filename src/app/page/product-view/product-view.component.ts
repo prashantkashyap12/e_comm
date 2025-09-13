@@ -1,53 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ProductView } from '../../tools/interface/product/productView';
 
-interface ProductImage {
-  large: string;
-  thumb: string;
-}
-
-interface ProductDiscript {
-  specification: string;
-  careMantains: string;
-}
-
-interface ProductOtherInfo {
-  Standup: string;
-  FoldedWI: string;
-  FoldedWO: string;
-  DoorPass: string;
-  Frame: string;
-  weight: string;
-  weightCapacity: string;
-  Width: string;
-  HandleHeight: string;
-  wheels: string;
-  size: string;
-}
-
-interface ProductReview {
-  name: string;
-  rating: number;
-  comment: string;
-  avatar: string;
-}
-
-
-
-interface Product {
-  title: string;
-  price: string;
-  stock: boolean;
-  delivery: boolean;
-  discountText: string;
-  description: string;
-  images: ProductImage[];
-  colors: string[];
-  sizes: string[];
-  Description: ProductDiscript[];
-  OtherInfo: ProductOtherInfo[];
-  reviews: ProductReview[];
-}
 @Component({
   selector: 'app-product-view',
   standalone: true,
@@ -57,8 +11,7 @@ interface Product {
 })
 export class ProductViewComponent {
 
-
-  product: Product = {
+  product: ProductView = {
     title: '3D™ wireless headset',
     price: '$155.00 - $255.00',
     stock: true,
@@ -100,6 +53,5 @@ export class ProductViewComponent {
       { name: 'Alice Johnson', rating: 3, comment: 'Good value for the price.', avatar: '../../../assets/images/testimonial/avater-03.png' }
     ]
   };
-
 
 }

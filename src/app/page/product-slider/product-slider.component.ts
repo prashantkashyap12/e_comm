@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Product } from '../../tools/interface/product.interface';
+import { Productasdf } from '../../tools/interface/product.interface';
 import { ProductService } from '../../tools/service/product.service';
 
 @Component({
@@ -12,9 +12,9 @@ import { ProductService } from '../../tools/service/product.service';
   styleUrl: './product-slider.component.css'
 })
 export class ProductSliderComponent implements OnInit {
-  products: Product[] = [];
-  filteredProducts: Product[] = [];
-  paginatedProducts: Product[] = [];
+  products: Productasdf[] = [];
+  filteredProducts: Productasdf[] = [];
+  paginatedProducts: Productasdf[] = [];
   searchTerm: string = '';
   selectedCategory: string = '';
   sortOption: string = 'name';

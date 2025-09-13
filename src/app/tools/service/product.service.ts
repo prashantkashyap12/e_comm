@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../interface/product.interface';
+import { Productasdf } from '../interface/product.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  private products: Product[] = [
+  private products: Productasdf[] = [
     { id: 1, name: 'Yantiti Leather & Canvas Bags', price: 29.99, oldPrice: 49.99, image: '../../../assets/images/product/electric/product-01.png', category: 'Accessories', rating: 5, reviews: 64 },
     { id: 2, name: 'Level 20 RGB Cherry', price: 29.99, oldPrice: 49.99, image: '../../../assets/images/product/electric/product-02.png', category: 'Electronics', rating: 4, reviews: 32 },
     { id: 3, name: 'Logitech Streamcam', price: 29.99, oldPrice: 49.99, image: '../../../assets/images/product/electric/product-03.png', category: 'Electronics', rating: 4, reviews: 28 },
@@ -28,7 +28,7 @@ export class ProductService {
     { id: 20, name: 'Digital Accessories', price: 20, oldPrice: 30, image: '../../../assets/images/product/electric/product-08.png', category: 'Accessories', rating: 4, reviews: 80 },
   ];
 
-  getProducts(): Product[] {
+  getProducts(): Productasdf[] {
     return this.products;
   }
 }

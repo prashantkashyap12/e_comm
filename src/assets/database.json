@@ -1,0 +1,395 @@
+{
+     "categories": [
+        {
+            "name": "phone",
+            "image": "images/product/categories/elec-4.png",
+            "products": [
+                {
+                    "category":"electronics",
+                    "id": "phone001",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "furniture",
+            "image": "images/product/categories/furni-8.png",
+            "products": [
+                {
+                    "category":"furniture",
+                    "id": "furniture001",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                },
+                {
+                    "category":"electronics",
+                    "id": "furniture002",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "shoes",
+            "imgae": "images/product/categories/furni-7.png",
+            "products": [
+               {
+                    "category":"electronics",
+                    "id": "shoes001",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+               }
+            ]   
+        },
+         {
+            "name": "electronics",
+            "image": "images/product/categories/elec-6.png",
+             "products":  [
+                {
+                    "category":"electronics",
+                    "id": "electronics001",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "clothes",
+            "image": "images/product/categories/furni-5.png",
+            "products": [
+                {
+                    "category":"clothes",
+                    "id": "cloth001",
+                    "title": "SHIV NARESH Men TRACK SUIT",
+                    "price": "2,549.00",
+                    "oldPrice": "3,249.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save 700 – Limited Time!",
+                    "description": "Men's Track Suit Set includes full-zipper jacket and a matching track pant for a complete look. This versatile and stylish set is made from high-quality polyester for breathability and durability.",
+                    "images": [
+                        { "large": "https://m.media-amazon.com/images/I/51fwZeJVbUL._SY879_.jpg", "thumb": "https://m.media-amazon.com/images/I/51fwZeJVbUL._SY879_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/512Yp90ZcHL._SY879_.jpg", "thumb": "https://m.media-amazon.com/images/I/512Yp90ZcHL._SY879_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/51JzAzs5xDL._SY879_.jpg", "thumb": "https://m.media-amazon.com/images/I/51JzAzs5xDL._SY879_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/61cxmC3uHpL._SY879_.jpg", "thumb": "https://m.media-amazon.com/images/I/61cxmC3uHpL._SY879_.jpg" }
+                        
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["M", "L", "XL", "XXL"],
+                    "Description": [
+                        {
+                        "specification": "You'll be oozing in style with maximum comfort. Classic lines, chic colours and structured details combined with functionality. ",
+                        "careMantains": "Shiv Naresh apparels, are made with high-quality materials and are designed for maximum comfort and performance."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "30 x 28 x 2 cm;",
+                        "weight": "250g",
+                        "Width": "28 cm",
+                        "size": "M, L, XL, XXL"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "https://m.media-amazon.com/images/I/61+GnMuX7aL.jpg"
+                        }
+                    ]
+                },
+                {
+                    "category":"clothes",
+                    "id": "cloth002",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "watches",
+            "image":"images/product/categories/elec-1.png",
+            "products": [
+                {
+                    "category":"electronics",
+                    "id": "watch001",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                },
+                {
+                    "category":"electronics",
+                    "id": "watch002",
+                    "title": "iNova X10 Pro",
+                    "price": "$699.00 - $899.00",
+                    "oldPrice": "$999.00",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Save $100 – Limited Time!",
+                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "images": [
+                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "256GB", "512GB"],
+                    "Description": [
+                        {
+                        "specification": "Octa-core processor, 120Hz AMOLED display...",
+                        "careMantains": "Use microfiber cloth to clean screen..."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Aluminum body",
+                        "weight": "190g",
+                        "Width": "7.5cm",
+                        "size": "128GB, 256GB, 512GB"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                }
+            ]
+        }
+
+     ]
+}

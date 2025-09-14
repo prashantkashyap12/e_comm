@@ -9,11 +9,6 @@
                                     <p>STUDENT NOW GET 10% OFF : <a href="#">GET OFFER</a></p>
                                 </div>
                             </div>
-                            <!-- <div class="slick-slide">
-                                <div class="campaign-content">
-                                    <p>STUDENT NOW GET 10% OFF : <a href="#">GET OFFER</a></p>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -43,7 +38,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr *ngFor="let item of getRec | async">
                                     <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
                                     <td class="product-thumbnail"><a href="single-product.html"><img src="../../../assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
                                     <td class="product-title"><a href="single-product.html">Wireless PS Handler</a></td>
@@ -55,7 +50,7 @@
                                     </td>
                                     <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
                                     <td class="product-thumbnail"><a href="single-product-2.html"><img src="../../../assets/images/product/electric/product-02.png" alt="Digital Product"></a></td>
                                     <td class="product-title"><a href="single-product-2.html">Gradient Light Keyboard</a></td>
@@ -78,7 +73,7 @@
                                         </div>
                                     </td>
                                     <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>

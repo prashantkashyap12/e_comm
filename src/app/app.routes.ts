@@ -13,7 +13,7 @@ export const routes: Routes = [
     {path: 'privacy', loadComponent: () => import('./page/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)},
     {path: 'refund', loadComponent: () => import('./page/refund-policy/refund-policy.component').then(m => m.RefundPolicyComponent)},
     {path: 'terms', loadComponent: () => import('./page/term-condi/term-condi.component').then(m => m.TermCondiComponent)},
-
+    {path: 'ProductList', loadComponent: () => import('./page/product-list/product-list.component').then(m => m.ProductListComponent)},
     {path: 'ProductList/:category', loadComponent: () => import('./page/product-list/product-list.component').then(m => m.ProductListComponent)},
     {path: 'product/:category/:id', loadComponent: () => import('./page/product-view/product-view.component').then(m => m.ProductViewComponent)},
     {path: 'cart', loadComponent: () => import('./page/cart-calc/cart-calc.component').then(m => m.CartCalcComponent)},

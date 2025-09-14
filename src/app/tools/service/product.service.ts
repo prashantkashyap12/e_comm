@@ -27,8 +27,13 @@ export class ProductService {
     { id: 19, name: 'Netfilx Remot', price: 45, oldPrice: 60, image: '../../../assets/images/product/electric/product-07.png', category: 'Electronics', rating: 4, reviews: 70 },
     { id: 20, name: 'Digital Accessories', price: 20, oldPrice: 30, image: '../../../assets/images/product/electric/product-08.png', category: 'Accessories', rating: 4, reviews: 80 },
   ];
-
   getProducts(): Productasdf[] {
     return this.products;
   }
+
+
+
+
+
+
 }

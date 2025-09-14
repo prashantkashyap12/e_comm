@@ -77,8 +77,8 @@
                                     <a routerLink="/home">Home</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a routerLink="/home">Shop</a>
-                                    <ul class="axil-submenu">
+                                    <a routerLink="/home" (click)="isShow()">Shop</a>
+                                    <ul class="axil-submenu" style="display: block;">  <!--  -->
                                         <li><a [routerLink]="['ProductList','phone']">Mobile & Accessories</a></li>
                                         <li><a [routerLink]="['ProductList','furniture']">Home and Office Furniture</a></li>
                                         <li><a [routerLink]="['ProductList','shoes']">Unisex Shoes</a></li>
@@ -88,18 +88,6 @@
                                     </ul>
                                 </li>
                                 <li><a routerLink="/about">About</a></li>
-                                <!-- <li class="menu-item-has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="axil-submenu">
-                                        <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-details.html">Standard Post</a></li>
-                                        <li><a href="blog-gallery.html">Gallery Post</a></li>
-                                        <li><a href="blog-video.html">Video Post</a></li>
-                                        <li><a href="blog-audio.html">Audio Post</a></li>
-                                        <li><a href="blog-quote.html">Quote Post</a></li>
-                                    </ul>
-                                </li> -->
                                 <li><a routerLink="/contact">Contact</a></li>
                             </ul>
                         </nav>

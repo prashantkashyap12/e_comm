@@ -46,15 +46,13 @@ export class ProductListComponent {
     });
   }
 
-
   onChange(event:any){
     this.route.navigate(['/ProductList', event.target.value]);
   }
 
-
   // Wishlist function
   addToWishlist(productId: string) {
-    sessionStorage.setItem('WishList', JSON.stringify([...JSON.parse(sessionStorage.getItem('wishList') || '[]'), productId]));
+    sessionStorage.setItem('WishList', JSON.stringify([...JSON.parse(sessionStorage.getItem('WishList') || '[]'), productId]));
     console.log('Product added to wishlist');
   }
 
@@ -63,5 +61,8 @@ export class ProductListComponent {
     sessionStorage.setItem('CartList', JSON.stringify([...JSON.parse(sessionStorage.getItem('CartList') || '[]'), cartId]));
     console.log('Product added to cart');
   }
+
+
+  
 
 }

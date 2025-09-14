@@ -15,8 +15,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -60,8 +60,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -89,7 +89,7 @@
                     ]
                 },
                 {
-                    "category":"electronics",
+                    "category":"furniture",
                     "id": "furniture002",
                     "title": "iNova X10 Pro",
                     "price": "$699.00 - $899.00",
@@ -99,8 +99,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -134,7 +134,7 @@
             "imgae": "images/product/categories/furni-7.png",
             "products": [
                {
-                    "category":"electronics",
+                    "category":"shoes",
                     "id": "shoes001",
                     "title": "iNova X10 Pro",
                     "price": "$699.00 - $899.00",
@@ -144,8 +144,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -189,8 +189,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -227,8 +227,8 @@
                     "category":"clothes",
                     "id": "cloth001",
                     "title": "SHIV NARESH Men TRACK SUIT",
-                    "price": "2,549.00",
-                    "oldPrice": "3,249.00",
+                    "price": "2,549",
+                    "oldPrice": "3,249",
                     "stock": true,
                     "delivery": true,
                     "discountText": "Save 700 – Limited Time!",
@@ -276,8 +276,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -311,7 +311,7 @@
             "image":"images/product/categories/elec-1.png",
             "products": [
                 {
-                    "category":"electronics",
+                    "category":"watches",
                     "id": "watch001",
                     "title": "iNova X10 Pro",
                     "price": "$699.00 - $899.00",
@@ -321,8 +321,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],
@@ -350,7 +350,7 @@
                     ]
                 },
                 {
-                    "category":"electronics",
+                    "category":"watches",
                     "id": "watch002",
                     "title": "iNova X10 Pro",
                     "price": "$699.00 - $899.00",
@@ -360,8 +360,8 @@
                     "discountText": "Save $100 – Limited Time!",
                     "description": "The iNova X10 Pro brings cutting-edge performance...",
                     "images": [
-                        { "large": "assets/images/product/mobile-01-big.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/mobile-02-big.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
+                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
                     ],
                     "colors": ["#000000", "#ffffff", "#808080"],
                     "sizes": ["128GB", "256GB", "512GB"],

@@ -38,17 +38,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr *ngFor="let item of getRec | async">
-                                    <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
-                                    <td class="product-thumbnail"><a href="single-product.html"><img src="../../../assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
-                                    <td class="product-title"><a href="single-product.html">Wireless PS Handler</a></td>
-                                    <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
+                                <tr *ngFor="let item of getAllRec, let i = index">
+                                    <td class="product-remove"><a (click)="removeItem(i+1, item.id)" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
+                                    <td class="product-thumbnail"><a [routerLink]="['/ProductList', item.category, item.id]"><img [src]="'../../../'+item.images[0].large" alt="Digital Product"></a></td>
+                                    <td class="product-title"><a [routerLink]="['/ProductList', item.category, item.id]">{{item.title}}</a></td>
+                                    <td class="product-price" data-title="Price"><span class="currency-symbol"></span>{{item.price}}</td>
                                     <td class="product-quantity" data-title="Qty">
                                         <div class="pro-qty">
                                             <input type="number" class="quantity-input" value="1">
                                         </div>
                                     </td>
-                                    <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
+                                    <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol"></span>{{item.price}}</td>
                                 </tr>
                                 <!-- <tr>
                                     <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>

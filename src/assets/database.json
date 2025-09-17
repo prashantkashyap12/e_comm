@@ -5,33 +5,159 @@
             "image": "images/product/categories/elec-4.png",
             "products": [
                 {
-                    "category":"electronics",
-                    "id": "phone001",
-                    "title": "iNova X10 Pro",
-                    "price": "$699.00 - $899.00",
-                    "oldPrice": "$999.00",
+                    "category":"phone",
+                    "id": "apple001",
+                    "title": "Apple iPhone 13 (Starlight, 128 GB)",
+                    "price": "44,000",
+                    "oldPrice": "49, 900",
                     "stock": true,
                     "delivery": true,
-                    "discountText": "Save $100 – Limited Time!",
-                    "description": "The iNova X10 Pro brings cutting-edge performance...",
+                    "discountText": "Bank Offer10% Off on Supermoney UPI Transactions, up to ₹1500. On orders of ₹5000 and aboveT&C",
+                    "description": "iPhone 13. boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.",
                     "images": [
-                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-01-thumb.png" },
-                        { "large": "assets/images/product/electric/product-05.png", "thumb": "assets/images/product/mobile-02-thumb.png" }
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg" },
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/a/z/g/iphone-13-mlpg3hn-a-apple-original-imag6vpyxhzdccrc.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/a/z/g/iphone-13-mlpg3hn-a-apple-original-imag6vpyxhzdccrc.jpeg" },
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/h/e/g/-original-imagh7g8k7ttcdkc.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/h/e/g/-original-imagh7g8k7ttcdkc.jpeg" },
+                        {"large":"https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/s/b/v/iphone-13-mlpg3hn-a-apple-original-imag6vpybxyz7wvq.jpeg", "thumb":"https://rukminim2.flixcart.com/image/832/832/ktketu80/mobile/s/b/v/iphone-13-mlpg3hn-a-apple-original-imag6vpybxyz7wvq.jpeg"}
                     ],
-                    "colors": ["#000000", "#ffffff", "#808080"],
-                    "sizes": ["128GB", "256GB", "512GB"],
+                    "colors": ["#4c4d4f", "#f3f7f8", "#f4f8e9", "#fff9e6", "#fee6e6"],
+                    "sizes": ["128GB"],
                     "Description": [
                         {
-                        "specification": "Octa-core processor, 120Hz AMOLED display...",
-                        "careMantains": "Use microfiber cloth to clean screen..."
+                        "specification": "12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording",
+                        "careMantains": "Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording"
                         }
                     ],
                     "OtherInfo": [
                         {
-                        "Frame": "Aluminum body",
-                        "weight": "190g",
-                        "Width": "7.5cm",
-                        "size": "128GB, 256GB, 512GB"
+                        "Frame": "plastic body",
+                        "weight": "0.17 Kilograms",
+                        "Width": "71 Millimeters",
+                        "size": "8 x 71 x 147 Millimeters"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                },
+                {
+                    "category":"phone",
+                    "id": "apple002",
+                    "title": "Apple iPhone 15 (128 GB) - Black",
+                    "price": "59,000",
+                    "oldPrice": "69, 900",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Bank Offer10% Off on Supermoney UPI Transactions, up to ₹1500. On orders of ₹5000 and aboveT&C",
+                    "description": "iPhone 15 boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.",
+                    "images": [
+                            {"large":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg", "thumb":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg"},
+                            {"large":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/u/m/3/-original-imagtc5ffhbausfy.jpeg", "thumb":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/u/m/3/-original-imagtc5ffhbausfy.jpeg"},
+                            {"large":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/d/k/t/-original-imah4xe6cff8cejm.jpeg", "thumb":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/d/k/t/-original-imah4xe6cff8cejm.jpeg"},
+                            {"large":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/4/b/j/-original-imah4xe6hwmfyxdn.jpeg", "thumb":"https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/4/b/j/-original-imah4xe6hwmfyxdn.jpeg"}
+                    ],
+                    "colors": ["#4c4d4f", "#f3f7f8", "#f4f8e9", "#fff9e6", "#fee6e6"],
+                    "sizes": ["128GB"],
+                    "Description": [
+                        {
+                        "specification": "48MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording",
+                        "careMantains": "Advanced dual-camera system with 48MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording"
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "plastic body",
+                        "weight": "0.17 Kilograms",
+                        "Width": "71 Millimeters",
+                        "size": "8 x 71 x 147 Millimeters"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Sapna Kumari",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                },
+                {
+                    "category":"phone",
+                    "id": "apple003",
+                    "title": "Apple iPhone 16 (White, 256 GB)",
+                    "price": "55,000",
+                    "oldPrice": "61, 000",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Bank Offer10% Off on Supermoney UPI Transactions, up to ₹1500. On orders of ₹5000 and aboveT&C",
+                    "description": "iPhone 16. Built for Apple Intelligence. Featuring Camera Control. 48 MP Fusion camera. Five vibrant colours. And A18 chip.",
+                    "images": [
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/v/p/-original-imah4jyfveygyubc.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/v/p/-original-imah4jyfveygyubc.jpeg" },
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/i/k/6/-original-imah4jyf2zpegbbf.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/i/k/6/-original-imah4jyf2zpegbbf.jpeg" },
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/l/e/s/-original-imah4jyfkmqn9kmu.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/l/e/s/-original-imah4jyfkmqn9kmu.jpeg" },
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/t/n/s/-original-imah4jyfrrhgvyht.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/t/n/s/-original-imah4jyfrrhgvyht.jpeg" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB"],
+                    "Description": [
+                        {
+                        "specification": "48MP + 12MP | 12MP Front Camera TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording",
+                        "careMantains": "Advanced dual-camera system with 48MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording"
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "plastic body",
+                        "weight": "0.17 Kilograms",
+                        "Width": "71 Millimeters",
+                        "size": "8 x 71 x 147 Millimeters"
+                        }
+                    ],
+                    "reviews": [
+                        {
+                        "name": "Raj Kumar",
+                        "rating": 5,
+                        "comment": "Amazing performance!",
+                        "avatar": "assets/images/testimonial/avater-01.png"
+                        }
+                    ]
+                },
+                {
+                    "category":"phone",
+                    "id": "apple004",
+                    "title": "iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life.",
+                    "price": "1,70,000",
+                    "oldPrice": "1,84, 900",
+                    "stock": true,
+                    "delivery": true,
+                    "discountText": "Bank Offer10% Off on Supermoney UPI Transactions, up to ₹1500. On orders of ₹5000 and aboveT&C",
+                    "description": "iPhone 16 Pro Max has a strong and light titanium design with a larger 17.43 cm (6.9″) Super Retina XDR display. It’s remarkably durable with the latest-generation Ceramic Shield material that’s 2x tougher than any smartphone glass.",
+                    "images": [
+                        { "large": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/v/p/-original-imah4jyfveygyubc.jpeg", "thumb": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/v/p/-original-imah4jyfveygyubc.jpeg" },
+                        { "large": "https://m.media-amazon.com/images/I/51uVytsMySL._SL1500_.jpg", "thumb": "https://m.media-amazon.com/images/I/51uVytsMySL._SL1500_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/71qwUZC36YL._SL1500_.jpg", "thumb": "https://m.media-amazon.com/images/I/71qwUZC36YL._SL1500_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/71ta3jyFvIL._SL1500_.jpg", "thumb": "https://m.media-amazon.com/images/I/71ta3jyFvIL._SL1500_.jpg" },
+                        { "large": "https://m.media-amazon.com/images/I/81CUo+n-XwL._SL1500_.jpg", "thumb": "https://m.media-amazon.com/images/I/81CUo+n-XwL._SL1500_.jpg" }
+                    ],
+                    "colors": ["#000000", "#ffffff", "#808080"],
+                    "sizes": ["128GB", "512GB", "1TB"],
+                    "Description": [
+                        {
+                        "specification": "Camera Control gives you an easier way to quickly access camera tools, like zoom or depth of field, so you can take the perfect shot in record time.",
+                        "careMantains": "Take your videos to a whole new level with 4K 120 fps Dolby Vision, enabled by the 48MP Fusion camera. The improved 48MP Ultra Wide camera lets you capture mesmerising detail in macro photos and wide-angle shots."
+                        }
+                    ],
+                    "OtherInfo": [
+                        {
+                        "Frame": "Super Retina XDR display, 17.43 cm / 6.9″ (diagonal), all‑screen OLED display, 2868x1320-pixel resolution at 460 ppi",
+                        "weight": "0.17 Kilograms",
+                        "Width": "71 Millimeters",
+                        "size": "8 x 71 x 147 Millimeters"
                         }
                     ],
                     "reviews": [

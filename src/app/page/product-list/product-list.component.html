@@ -88,7 +88,7 @@
                         <div class="axil-product product-style-one has-color-pick mt--40" >
                             <div class="thumbnail">
                                 <a [routerLink]="['/product', product.category, product.id]">
-                                    <img src="https://m.media-amazon.com/images/I/61m4o0uVuWL._SL1500_.jpg"  alt="Product Images">
+                                    <img [src]="product.images[0].large"  alt="Product Images">
                                 </a>
                                 <div class="label-block label-right">
                                     <div class="product-badget">20% OFF</div>

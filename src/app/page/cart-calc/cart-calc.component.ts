@@ -31,8 +31,8 @@ export class CartCalcComponent {
       console.log(this.getAllRec);
       console.log(cartList);
       this.getAllRec = this.getAllRec.filter((item:any) => cartList.includes(item.id));
+      this.totalPrice();
     });
-    this.totalPrice();
   }
   
   removeItem(sr:any, id:any){
@@ -49,9 +49,9 @@ export class CartCalcComponent {
   total:any = 0;
   totalPrice(): any {
     for (let item of this.getAllRec) {
-      this.total += item.price;
+      this.total += parseFloat(item.price);
     }
-    this.total = parseFloat(this.total).toFixed(2);
+    this.total = parseFloat(this.total);
     return this.total;
   }
 }

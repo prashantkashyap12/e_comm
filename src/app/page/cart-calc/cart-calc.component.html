@@ -1,19 +1,19 @@
 
 <div class="header-top-campaign">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-5 col-lg-6 col-md-10">
-                        <div class="header-campaign-activation axil-slick-arrow arrow-both-side header-campaign-arrow">
-                            <div class="slick-slide">
-                                <div class="campaign-content">
-                                    <p>STUDENT NOW GET 10% OFF : <a href="#">GET OFFER</a></p>
-                                </div>
-                            </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-10">
+                <div class="header-campaign-activation axil-slick-arrow arrow-both-side header-campaign-arrow">
+                    <div class="slick-slide">
+                        <div class="campaign-content">
+                            <p>STUDENT NOW GET 10% OFF : <a href="#">GET OFFER</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
 
     <main class="main-wrapper">
@@ -108,26 +108,26 @@
                                                     </div>
                                                     <div class="input-group">
                                                         <input type="radio" id="radio2" name="shipping">
-                                                        <label for="radio2">Local: $35.00</label>
+                                                        <label for="radio2">Local: {{(this.total/100*2)}}</label>
                                                     </div>
                                                     <div class="input-group">
                                                         <input type="radio" id="radio3" name="shipping">
-                                                        <label for="radio3">Flat rate: $12.00</label>
+                                                        <label for="radio3">Flat rate: {{(this.total/100*1)}}</label>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="order-tax">
                                                 <td>State Tax</td>
-                                                <td>$8.00</td>
+                                                <td>18% {{(this.total/100*18)}}</td>
                                             </tr>
                                             <tr class="order-total">
                                                 <td>Total</td>
-                                                <td class="order-total-amount">$125.00</td>
+                                                <td class="order-total-amount">{{this.total+(this.total/100*18)}}</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <a href="checkout.html" class="axil-btn btn-bg-primary checkout-btn">Process to Checkout</a>
+                                <a routerLink="/checkout" class="axil-btn btn-bg-primary checkout-btn">Process to Checkout</a>
                             </div>
                         </div>
                     </div>

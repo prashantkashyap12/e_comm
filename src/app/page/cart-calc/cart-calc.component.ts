@@ -20,7 +20,7 @@ export class CartCalcComponent {
     this.getData();
   }
 
-<<<<<<< Updated upstream
+// <<<<<<< Updated upstream
   // Method to fetch data from the service
   getAllRec:any;
   getData(){
@@ -29,23 +29,12 @@ export class CartCalcComponent {
       this.getAllRec = this.getAllRec.categories.flatMap((category:any) => category.products);
       let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]'); // 
       cartList = [...new Set(cartList)]; // Remove duplicates
-      console.log(this.getAllRec);
-      console.log(cartList);
       this.getAllRec = this.getAllRec.filter((item:any) => cartList.includes(item.id));
       this.totalPrice();
     });
   }
   
-  removeItem(sr:any, id:any){
-    //  this.getAllRec.splice(sr, 1);
-      const index = sessionStorage.getItem("CartList");
-      const arrayindex = index?.split(',')
-      console.log(`${typeof index}, ${typeof arrayindex}`)
-      // for(let id of index){}
-      // console.log(this.getAllRec.include(id))
-      console.log(this.getAllRec)
-      this.getData()
-  }
+
 
   total:any = 0;
   totalPrice(): any {
@@ -55,18 +44,18 @@ export class CartCalcComponent {
     this.total = parseFloat(this.total);
     return this.total;
   }
-=======
+// =======
     // Method to fetch data from the service
-    getAllRec:any;
-    getData(){
-        this._dbProductService.getCategories().subscribe(res=>{
-        this.getAllRec=res;
-        this.getAllRec = this.getAllRec.categories.flatMap((category:any) => category.products);
-        let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]'); // 
-        cartList = [...new Set(cartList)]; // Remove duplicates
-        this.getAllRec = this.getAllRec.filter((item:any) => cartList.includes(item.id));
-      });
-    }
+    // getAllRec:any;
+    // getData(){
+    //     this._dbProductService.getCategories().subscribe(res=>{
+    //     this.getAllRec=res;
+    //     this.getAllRec = this.getAllRec.categories.flatMap((category:any) => category.products);
+    //     let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]'); // 
+    //     cartList = [...new Set(cartList)]; // Remove duplicates
+    //     this.getAllRec = this.getAllRec.filter((item:any) => cartList.includes(item.id));
+    //   });
+    // }
   
     removeItem(sr:any, id:any){
       let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]');
@@ -76,5 +65,5 @@ export class CartCalcComponent {
     }
 
 
->>>>>>> Stashed changes
+// >>>>>>> Stashed changes
 }

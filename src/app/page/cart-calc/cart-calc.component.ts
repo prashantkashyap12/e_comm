@@ -20,8 +20,6 @@ export class CartCalcComponent {
     this.getData();
   }
 
-// <<<<<<< Updated upstream
-  // Method to fetch data from the service
   getAllRec:any;
   getData(){
     this._dbProductService.getCategories().subscribe(res=>{
@@ -33,8 +31,6 @@ export class CartCalcComponent {
       this.totalPrice();
     });
   }
-  
-
 
   total:any = 0;
   totalPrice(): any {
@@ -44,26 +40,12 @@ export class CartCalcComponent {
     this.total = parseFloat(this.total);
     return this.total;
   }
-// =======
-    // Method to fetch data from the service
-    // getAllRec:any;
-    // getData(){
-    //     this._dbProductService.getCategories().subscribe(res=>{
-    //     this.getAllRec=res;
-    //     this.getAllRec = this.getAllRec.categories.flatMap((category:any) => category.products);
-    //     let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]'); // 
-    //     cartList = [...new Set(cartList)]; // Remove duplicates
-    //     this.getAllRec = this.getAllRec.filter((item:any) => cartList.includes(item.id));
-    //   });
-    // }
-  
-    removeItem(sr:any, id:any){
-      let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]');
-      let filter  = cartList.filter((a:any)=>a !== id);
-      sessionStorage.setItem('CartList',JSON.stringify(filter));
-      this.getData();
-    }
 
+  removeItem(sr:any, id:any){
+    let cartList = JSON.parse(sessionStorage.getItem('CartList') || '[]');
+    let filter  = cartList.filter((a:any)=>a !== id);
+    sessionStorage.setItem('CartList',JSON.stringify(filter));
+    this.getData();
+  }
 
-// >>>>>>> Stashed changes
 }

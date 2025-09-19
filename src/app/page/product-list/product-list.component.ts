@@ -28,7 +28,7 @@ export class ProductListComponent {
       this.alldata=res;
       this.findList()
     });
-    console.log(this.alldata);
+    // console.log(this.alldata);
   }
   
   // filter list according to category
@@ -38,7 +38,7 @@ export class ProductListComponent {
       const productLs = this.alldata.categories.filter((item:any)=>item.name==params['category']);
       if(productLs.length>0 && productLs[0].products){
         this.produtList=productLs[0].products;
-        console.log(this.produtList);
+        // console.log(this.produtList);
       }else{
         this.produtList=[];
         console.log('No products found for this category');
@@ -61,8 +61,5 @@ export class ProductListComponent {
     sessionStorage.setItem('CartList', JSON.stringify([...JSON.parse(sessionStorage.getItem('CartList') || '[]'), cartId]));
     console.log('Product added to cart');
   }
-
-
-  
 
 }

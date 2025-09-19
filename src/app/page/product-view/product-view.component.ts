@@ -1,15 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProductView } from '../../tools/interface/product/productView';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DbProductService } from '../../tools/service/db-product.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-view',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
+  providers:[DbProductService],
   templateUrl: './product-view.component.html',
   styleUrl: './product-view.component.css'
 })
 export class ProductViewComponent {
+
+  constructor(private _router:ActivatedRoute, private _dbProductService: DbProductService) { }
+  ngOnInit(): void {
+    this.showProduct();
+  }
 
   product: ProductView = {
     title: '3D™ wireless headset',
@@ -53,5 +62,31 @@ export class ProductViewComponent {
       { name: 'Alice Johnson', rating: 3, comment: 'Good value for the price.', avatar: '../../../assets/images/testimonial/avater-03.png' }
     ]
   };
+
+
+  itemProduct:any;
+  itemproductlist:any[]=[];
+  showProduct(){
+      this._dbProductService.getCategories().subscribe(res=>{
+      const allData=res;  
+      console.log(allData);
+      this._router.params.subscribe((params:any) => {
+        const productLs = allData.categories.filter((item:any)=>item.name==params['category']);
+        this.itemproductlist= productLs[0].products.filter((a:any)=>a.id !=='apple004');
+        console.log(this.itemproductlist);
+        if(productLs.length>0 && productLs[0].products){
+          const prodList=productLs[0].products;
+          const productItem = prodList.filter((it:any)=>it.id==params['id']);
+          if(productItem.length>0){
+            this.itemProduct=productItem[0];
+            console.log(this.itemProduct);
+          }
+        }else{
+          this.itemProduct=null;
+          console.log('No products found for this category');
+        }
+     });
+   });
+  }
 
 }

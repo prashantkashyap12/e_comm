@@ -3,83 +3,80 @@
         <div class="single-product-thumb mb--40">
             <div class="container">
                 <div class="row">
-                <!-- Product Images -->
-                <div class="col-lg-7 mb--40">
-                    <div class="row">
-                    <div class="col-lg-10 order-lg-2">
-                        <div class="single-product-thumbnail-wrap zoom-gallery">
-                        <div class="single-product-thumbnail product-large-thumbnail-3 axil-product">
-                            <div class="thumbnail" *ngFor="let img of product.images">
-                            <a [href]="img.large" class="popup-zoom">
-                                <img [src]="img.large" alt="Product Image" />
-                            </a>
+                    <!-- Product Images -->
+                    <div class="col-lg-7 mb--40">
+                        <div class="row">
+                            <div class="col-lg-10 order-lg-2">
+                                <div class="single-product-thumbnail-wrap zoom-gallery">
+                                <div class="single-product-thumbnail product-large-thumbnail-3 axil-product">
+                                    <div class="thumbnail" *ngFor="let img of itemProduct.images">
+                                        <a [href]="img.large" class="popup-zoom">
+                                            <img [src]="img.large" alt="Product Image" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="label-block">
+                                    <div class="product-badget">35% OFF</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 order-lg-1">
+                                <div class="product-small-thumb-3 small-thumb-wrapper">
+                                    <div class="small-thumb-img" *ngFor="let img of itemProduct.images">
+                                        <img [src]="img.thumb" alt="thumb image" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="label-block">
-                            <div class="product-badget">20% OFF</div>
-                        </div>
+                    </div>
+
+                    <!-- Product Content -->
+                    <div class="col-lg-5 mb--40">
+                        <div class="single-product-content">
+                            <div class="inner">
+                                <h2 class="product-title">{{ this.itemProduct.title }}</h2>
+                                <ul class="product-meta">
+                                    <li><i class="fal fa-check"></i>{{ this.itemProduct.stock ? 'In stock' : 'Out of stock' }}</li>
+                                    <li><i class="fal fa-check"></i>{{ this.itemProduct.delivery ? 'Free delivery available' : 'Delivery charges apply' }}</li>
+                                    <li><i class="fal fa-check"></i>{{ this.itemProduct.discountText }}</li>
+                                </ul>
+
+                                <p class="description">{{ this.itemProduct.description }}</p>
+
+                                <!-- Colors -->
+                                <div class="product-variation">
+                                <h6 class="title">Colors:</h6>
+                                    <ul class="color-variant">
+                                        <li *ngFor="let c of itemProduct.colors" [ngStyle]="{'background-color': c}" class="color-circle"></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Sizes -->
+                                <div class="product-variation product-size-variation">
+                                <h6 class="title">Size:</h6>
+                                    <ul class="range-variant">
+                                        <li *ngFor="let s of itemProduct.sizes">{{ s }}</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Actions -->
+                                <div class="product-action-wrapper d-flex-center" >
+                                    <div class="pro-qty"><input type="text" value="1" /></div>
+                                    <ul class="product-action d-flex-center mb--0">
+                                        <li class="add-to-cart"><a (click)="addToWishlist(this.itemProduct.id)" class="axil-btn btn-bg-primary">Add to Cart</a></li>
+                                        <li class="wishlist"><a (click)="addtoCart(this.itemProduct.id)" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 order-lg-1">
-                        <div class="product-small-thumb-3 small-thumb-wrapper">
-                        <div class="small-thumb-img" *ngFor="let img of product.images">
-                            <img [src]="img.thumb" alt="thumb image" />
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Product Content -->
-                <div class="col-lg-5 mb--40">
-                    <div class="single-product-content">
-                    <div class="inner">
-                        <h2 class="product-title">{{ product.title }}</h2>
-                        <span class="price-amount">{{ product.price }}</span>
-
-                        <ul class="product-meta">
-                        <li><i class="fal fa-check"></i>{{ product.stock ? 'In stock' : 'Out of stock' }}</li>
-                        <li><i class="fal fa-check"></i>{{ product.delivery ? 'Free delivery available' : 'Delivery charges apply' }}</li>
-                        <li><i class="fal fa-check"></i>{{ product.discountText }}</li>
-                        </ul>
-
-                        <p class="description">{{ product.description }}</p>
-
-                        <!-- Colors -->
-                        <div class="product-variation">
-                        <h6 class="title">Colors:</h6>
-                        <ul class="color-variant">
-                            <li *ngFor="let c of product.colors" [ngStyle]="{'background-color': c}" class="color-circle"></li>
-                        </ul>
-                        </div>
-
-                        <!-- Sizes -->
-                        <div class="product-variation product-size-variation">
-                        <h6 class="title">Size:</h6>
-                        <ul class="range-variant">
-                            <li *ngFor="let s of product.sizes">{{ s }}</li>
-                        </ul>
-                        </div>
-
-                        <!-- Actions -->
-                        <div class="product-action-wrapper d-flex-center">
-                        <div class="pro-qty"><input type="text" value="1" /></div>
-                        <ul class="product-action d-flex-center mb--0">
-                            <li class="add-to-cart"><a href="cart.html" class="axil-btn btn-bg-primary">Add to Cart</a></li>
-                            <li class="wishlist"><a href="wishlist.html" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
-                        </ul>
-                        </div>
-
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
         
 
 
-        <div class="woocommerce-tabs wc-tabs-wrapper bg-vista-white">
+            <div class="woocommerce-tabs wc-tabs-wrapper bg-vista-white">
                 <div class="container">
                     <ul class="nav tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -95,7 +92,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                             <div class="product-desc-wrapper">
-                                <div class="row" *ngFor="let dis of product.Description">
+                                <div class="row" *ngFor="let dis of itemProduct.Description">
                                     <div class="col-lg-6 mb--30">
                                         <div class="single-desc">
                                             <h5 class="title">Specifications:</h5>
@@ -145,7 +142,7 @@
                             <div class="product-additional-info">
                                 <div class="table-responsive">
                                     <table>
-                                        <tbody *ngFor="let info of product.OtherInfo">
+                                        <tbody *ngFor="let info of itemProduct.OtherInfo">
                                             <tr>
                                                 <th>Stand Up</th>
                                                 <td>{{info.Standup}}</td>
@@ -370,29 +367,29 @@
                 <!-- End .slick-single-layout -->
                 <div class="slick-single-layout">
                     <div class="row row--15">
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30" *ngFor="let data of itemproductlist">
                             <div class="axil-product product-style-one">
                                 <div class="thumbnail">
-                                    <a href="single-product.html">
-                                        <img src="../../../assets/images/product/electric/product-01.png" alt="Product Images">
+                                    <a [routerLink]="['/product', data.category, data.id]">
+                                        <img [src]="product.images[0].large" alt="Product Images">
                                     </a>
                                     <div class="label-block label-right">
                                         <div class="product-badget">20% Off</div>
                                     </div>
                                     <div class="product-hover-action">
                                         <ul class="cart-action">
-                                            <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a href="single-product.html">Select Option</a></li>
-                                            <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+                                            <li class="quickview"><a (click)="addtoCart(data.id)" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                            <li class="select-option"><a [routerLink]="['/product', data.category, data.id]">Select Option</a></li>
+                                            <li class="wishlist"><a (click)="addToWishlist(data.id)"><i class="far fa-heart"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="product-content">
                                     <div class="inner">
-                                        <h5 class="title"><a href="single-product.html">Yantiti Leather & Canvas Bags</a></h5>
+                                        <h5 class="title"><a [routerLink]="['/product', data.category, data.id]">{{data.title}}</a></h5>
                                         <div class="product-price-variant">
-                                            <span class="price current-price">$29.99</span>
-                                            <span class="price old-price">$49.99</span>
+                                            <span class="price current-price">{{data.price}}</span>
+                                            <span class="price old-price">{{data.oldPrice}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -402,9 +399,9 @@
                 </div>
                 <!-- End .slick-single-layout -->
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center mt--20 mt_sm--0">
-                    <a href="shop.html" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
+            <div class="row" >
+                <div class="col-lg-12 text-center mt--20 mt_sm--0" >
+                    <a [routerLink]="['/ProductList', this.itemproductlist[0].category]" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
                 </div>
             </div>
         </div>

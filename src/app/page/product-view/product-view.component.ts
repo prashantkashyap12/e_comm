@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProductView } from '../../tools/interface/product/productView';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { DbProductService } from '../../tools/service/db-product.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-view',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, RouterLink],
   providers:[DbProductService],
   templateUrl: './product-view.component.html',
   styleUrl: './product-view.component.css'
@@ -87,6 +87,15 @@ export class ProductViewComponent {
         }
      });
    });
+  }
+
+  addToWishlist(prod:any){
+    sessionStorage.setItem('WishList', JSON.stringify([...JSON.parse(sessionStorage.getItem('WishList') || '[]'), prod]));
+  }
+
+  addtoCart(cartId: string) {
+    sessionStorage.setItem('CartList', JSON.stringify([...JSON.parse(sessionStorage.getItem('CartList') || '[]'), cartId]));
+    console.log('Product added to cart');
   }
 
 }

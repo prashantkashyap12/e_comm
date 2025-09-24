@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 
 }

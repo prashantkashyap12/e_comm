@@ -17,6 +17,7 @@ export class ProductListComponent {
   constructor(private _dbProductService: DbProductService, private _router: ActivatedRoute, private route:Router) {  }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.extractCategories();
     this.findList();
   }
@@ -53,13 +54,13 @@ export class ProductListComponent {
   // Wishlist function
   addToWishlist(productId: string) {
     sessionStorage.setItem('WishList', JSON.stringify([...JSON.parse(sessionStorage.getItem('WishList') || '[]'), productId]));
-    console.log('Product added to wishlist');
+    alert('Product added to wishlist');
   }
 
   // Add to cart function
   addtoCart(cartId: string) {
     sessionStorage.setItem('CartList', JSON.stringify([...JSON.parse(sessionStorage.getItem('CartList') || '[]'), cartId]));
-    console.log('Product added to cart');
+    alert('Product added to cart');
   }
 
 }

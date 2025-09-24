@@ -17,6 +17,7 @@ export class ProductViewComponent {
 
   constructor(private _router:ActivatedRoute, private _dbProductService: DbProductService) { }
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.showProduct();
   }
 
@@ -91,11 +92,12 @@ export class ProductViewComponent {
 
   addToWishlist(prod:any){
     sessionStorage.setItem('WishList', JSON.stringify([...JSON.parse(sessionStorage.getItem('WishList') || '[]'), prod]));
+    alert('Product added to wishlist');
   }
 
   addtoCart(cartId: string) {
     sessionStorage.setItem('CartList', JSON.stringify([...JSON.parse(sessionStorage.getItem('CartList') || '[]'), cartId]));
-    console.log('Product added to cart');
+    alert('Product added to cart');
   }
 
 }

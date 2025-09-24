@@ -16,6 +16,7 @@ export class WishlistComponent {
 
 constructor(private _dbProductService: DbProductService) {  }
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.getData()
   }
 
@@ -36,6 +37,7 @@ constructor(private _dbProductService: DbProductService) {  }
     let filter  = cartList.filter((a:any)=>a !== id);
     sessionStorage.setItem('WishList',JSON.stringify(filter));
     this.getData();
+    alert('Item removed from wishlist');
   }
 
 

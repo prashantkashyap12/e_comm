@@ -98,7 +98,8 @@
                                     <ul class="cart-action">
                                         <li class="wishlist"><a (click)="addToWishlist(product.id)"><i class="far fa-heart"></i></a></li>
                                         <li class="select-option"><a (click)="addtoCart(product.id)">Add to Cart</a></li>
-                                        <li class="quickview"><a href="call to model" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                        <li class="quickview"><a [routerLink]="['/product', product.category, product.id]" ><i class="far fa-eye"></i></a></li>
+                                        <!-- model > data-bs-toggle="modal" data-bs-target="#quick-view-modal" -->
                                     </ul>
                                 </div>
                             </div>

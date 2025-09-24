@@ -26,6 +26,7 @@ export class ProductSliderComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.products = this.productService.getProducts();
     this.categories = [...new Set(this.products.map(p => p.category))];
     this.applyFilters();

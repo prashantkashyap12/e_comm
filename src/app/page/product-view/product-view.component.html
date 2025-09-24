@@ -40,9 +40,8 @@
                                     <li><i class="fal fa-check"></i>{{ this.itemProduct.delivery ? 'Free delivery available' : 'Delivery charges apply' }}</li>
                                     <li><i class="fal fa-check"></i>{{ this.itemProduct.discountText }}</li>
                                 </ul>
-
                                 <p class="description">{{ this.itemProduct.description }}</p>
-
+                                
                                 <!-- Colors -->
                                 <div class="product-variation">
                                 <h6 class="title">Colors:</h6>
@@ -63,8 +62,8 @@
                                 <div class="product-action-wrapper d-flex-center" >
                                     <div class="pro-qty"><input type="text" value="1" /></div>
                                     <ul class="product-action d-flex-center mb--0">
-                                        <li class="add-to-cart"><a (click)="addToWishlist(this.itemProduct.id)" class="axil-btn btn-bg-primary">Add to Cart</a></li>
-                                        <li class="wishlist"><a (click)="addtoCart(this.itemProduct.id)" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
+                                        <li class="add-to-cart"><a (click)="addtoCart(this.itemProduct.id)" class="axil-btn btn-bg-primary">Add to Cart</a></li>
+                                        <li class="wishlist"><a (click)="addToWishlist(this.itemProduct.id)" class="axil-btn wishlist-btn"><i class="far fa-heart"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -371,15 +370,16 @@
                             <div class="axil-product product-style-one">
                                 <div class="thumbnail">
                                     <a [routerLink]="['/product', data.category, data.id]">
-                                        <img [src]="product.images[0].large" alt="Product Images">
+                                        <img [src]="data.images[0].large" alt="Product Images">
                                     </a>
                                     <div class="label-block label-right">
                                         <div class="product-badget">20% Off</div>
                                     </div>
                                     <div class="product-hover-action">
                                         <ul class="cart-action">
-                                            <li class="quickview"><a (click)="addtoCart(data.id)" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                            <li class="select-option"><a [routerLink]="['/product', data.category, data.id]">Select Option</a></li>
+                                            <li class="quickview"><a (click)="addtoCart(data.id)"><i class="far fa-eye"></i></a></li> 
+                                            <!--  data-bs-toggle="modal" data-bs-target="#quick-view-modal" -->
+                                            <li class="select-option"><a [routerLink]="['/product', data.category, data.id]">Select Product</a></li>
                                             <li class="wishlist"><a (click)="addToWishlist(data.id)"><i class="far fa-heart"></i></a></li>
                                         </ul>
                                     </div>

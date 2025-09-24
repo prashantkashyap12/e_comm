@@ -16,6 +16,7 @@ export class CheckOutComponent {
 
   constructor(private _dbProductService: DbProductService) {  }
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.getData();
   }
 

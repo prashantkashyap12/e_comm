@@ -17,6 +17,7 @@ export class CartCalcComponent {
 
   constructor(private _dbProductService: DbProductService) {  }
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.getData();
   }
 
@@ -46,6 +47,9 @@ export class CartCalcComponent {
     let filter  = cartList.filter((a:any)=>a !== id);
     sessionStorage.setItem('CartList',JSON.stringify(filter));
     this.getData();
+    this.total();
+    alert('Item removed from cart');
+    this.ngOnInit();
   }
 
 }
